@@ -54,7 +54,7 @@ body {
 #gifPopup {
     position: fixed;
     top: 50%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
     display: none;
     z-index: 1000;
@@ -63,7 +63,7 @@ body {
 
 /* ×ボタン（四角に変更） */
 #closeButton {
-    position: absolute;
+    position: fixed;
     top: 5%;
     right: 5%;
     width: 50px;  /* 幅を指定 */
@@ -76,7 +76,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1001;
+    z-index: 1000;
 }
 
 /* ローディング画面 */
