@@ -47,7 +47,7 @@ body {
     text-align: center;
 }
 
-/* GIFポップアップ */
+/* GIFポップアップ（通常） */
 #gifPopup {
     position: fixed;
     top: 50%;
@@ -55,7 +55,20 @@ body {
     transform: translate(-50%, -50%);
     display: none;
     z-index: 1000;
+    width: 90vw;  /* 画面の90% */
+    height: 90vh; /* 画面の90% */
+    max-width: 600px;  /* 最大幅を600pxに制限 */
+    max-height: 600px; /* 最大高さを600pxに制限 */
 }
+
+/* iPhone専用（画面を少し小さく） */
+@media screen and (max-width: 430px) and (max-height: 932px) {
+    #gifPopup {
+        width: 80vw;  /* 画面の80%に縮小 */
+        height: 80vh;
+    }
+}
+
 
 /* ×ボタンと①②ボタンをまとめる */
 #buttonContainer {
