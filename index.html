@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -16,7 +15,6 @@
 
     <div id="gifPopup">
         <img id="popupGif" />
-        <button id="closeButton">✖︎</button> <!-- 閉じるボタン -->
     </div>
 
     <div id="tapHint">タップで映像を切り替える</div>
@@ -25,14 +23,17 @@
 
     <div id="markerBoundary"></div>
 
-    <!-- ①と②のボタン追加 -->
-    <div id="switchButtons">
-        <button id="button1" class="switchButton red">①</button>
-        <button id="button2" class="switchButton blue">②</button>
+    <!-- ×ボタンと①②ボタンをまとめる -->
+    <div id="buttonContainer">
+        <button id="closeButton">✖︎</button>
+        <div id="switchButtons">
+            <button id="button1" class="switchButton red">①</button>
+            <button id="button2" class="switchButton blue">②</button>
+        </div>
     </div>
 
     <a-scene embedded arjs>
-         <!-- City Markers -->
+        <!-- City Markers -->
         <a-marker id="city1" type="pattern" url="markers/city1.patt"></a-marker>
         <a-marker id="city2" type="pattern" url="markers/city2.patt"></a-marker>
         <a-marker id="city3" type="pattern" url="markers/city3.patt"></a-marker>
